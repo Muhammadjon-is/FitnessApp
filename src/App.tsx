@@ -4,6 +4,7 @@ import { SelectedPage } from "./Scenes/shared/types";
 import Home from "./Scenes/Home";
 import Benefit from "./Scenes/Benefits";
 import OurClasses from "./Scenes/OurClasses";
+import ContactPage from "./Scenes/Contact";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
     <Home setSelectedPage={setSelectedPage}/>
     <Benefit setSelectedPage={setSelectedPage}/>
     <OurClasses setSelectedPage={setSelectedPage}/>
+    <ContactPage setSelectedPage={setSelectedPage} />
     </div>
   );
 }
