@@ -13,18 +13,18 @@ import benfitPageGraphic from "../../assets/BenefitsPageGraphic.png";
 const benefits: Array<BenefitType> = [
   {
     icon: <HomeModernIcon className="h-6 w-6" />,
-    title: "State of the Art Facilities ",
-    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti reiciendis, odit perspiciatis sequi accusantium",
+    title: "State of the Art Facilities",
+    desc: "Experience our state-of-the-art facilities equipped with the latest fitness technology. Enjoy a spacious, clean, and inspiring environment for your workouts.",
   },
   {
     icon: <UserGroupIcon className="h-6 w-6" />,
-    title: "100's of Diverse Classes ",
-    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti reiciendis, odit perspiciatis sequi accusantium",
+    title: "100's of Diverse Classes",
+    desc: "Choose from a wide range of diverse classes, from high-energy cardio to mindful yoga. Our classes cater to all fitness levels and preferences.",
   },
   {
     icon: <AcademicCapIcon className="h-6 w-6" />,
-    title: "Expert and Pro Trainers ",
-    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti reiciendis, odit perspiciatis sequi accusantium",
+    title: "Expert and Pro Trainers",
+    desc: "Our team of expert trainers is here to support your fitness journey. They bring experience and passion to help you achieve your fitness goals effectively.",
   },
 ];
 
@@ -59,14 +59,12 @@ const Benefit = ({ setSelectedPage }: Props) => {
         >
           <HText>MORE THAN JUST A GYM</HText>
           <p className="my-5 text-sm">
-            We provide world class fitness equipment, trainers and classes to
-            get you to your ultiimate fitness goals with ease. We provide true
-            care into each and every member
+            We provide world-class fitness equipment, trainers, and classes to get you to your ultimate fitness goals with ease. We put genuine care into each and every member.
           </p>
         </motion.div>
         {/* Benefit */}
         <motion.div
-          className="md:flex items-center justify-between gap-8 mt-5 "
+          className="md:flex items-center justify-between gap-8 mt-5"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -82,29 +80,28 @@ const Benefit = ({ setSelectedPage }: Props) => {
             />
           ))}
         </motion.div>
-        {/* Graphic adn Description */}
-
-        <div className="mt-16  items-center justify-between gap-20 md:mt-28 md:flex">
+        {/* Graphic and Description */}
+        <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
           {/* Graphic */}
           <img
             className="mx-auto"
             src={benfitPageGraphic}
-            alt="Benefit page Grpahic"
+            alt="Benefit page Graphic"
           />
           {/* Description */}
           <div>
-            {/* title */}
+            {/* Title */}
             <div className="relative">
-              <div className="before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves ">
-                < motion.div  
-                   initial="hidden"
-                   whileInView="visible"
-                   viewport={{ once: true, amount: 0.5 }}
-                   transition={{ delay: 0.4, duration: 0.5 }}
-                   variants={{
-                     hidden: { opacity: 0, x: 50 },
-                     visible: { opacity: 1, x: 0 },
-                   }}
+              <div className="before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ delay: 0.4, duration: 0.5 }}
+                  variants={{
+                    hidden: { opacity: 0, x: 50 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
                 >
                   <HText>
                     MILLIONS OF HAPPY MEMBERS GETTING
@@ -115,30 +112,22 @@ const Benefit = ({ setSelectedPage }: Props) => {
             </div>
             {/* Description */}
             <motion.div
-               initial="hidden"
-               whileInView="visible"
-               viewport={{ once: true, amount: 0.5 }}
-               transition={{ delay: 0.8, duration: 0.5 }}
-               variants={{
-                 hidden: { opacity: 0, x: 50 },
-                 visible: { opacity: 1, x: 0 },
-               }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ delay: 0.8, duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: 50 },
+                visible: { opacity: 1, x: 0 },
+              }}
             >
               <p className="my-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-                autem odio debitis, placeat officiis voluptatum nostrum quisquam
-                quod voluptatibus. Reprehenderit dolor cumque ratione neque
-                expedita blanditiis praesentium rerum doloremque voluptates!
+                Discover a fitness community like no other. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Our diverse range of offerings ensures there's something for everyone, whether you're new to fitness or a seasoned pro.
               </p>
-
               <p className="mb-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-                inventore, iusto laborum quisquam quas consequuntur sapiente
-                labore, sit quis similique, error ipsam exercitationem magnam.
-                Quibusdam, officiis? Est quo eius enim!
+                Join us and be a part of the fitness revolution. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Get ready to sweat, achieve your goals, and be part of our vibrant and supportive fitness family.
               </p>
             </motion.div>
-
             {/* Button */}
             <div className="relative mt-16">
               <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
